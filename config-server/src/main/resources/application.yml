@@ -1,9 +1,12 @@
-server:
-  port: 8888
+security:
+  basic:
+    enabled: false
 
-spring:
-  cloud:
-    config:
-      server:
-        git:
-          uri: https://github.com/CatTester/app-config.git
+management:
+  security:
+    enabled: false
+
+logging:
+  level:
+    io:
+      pivotal: DEBUG
